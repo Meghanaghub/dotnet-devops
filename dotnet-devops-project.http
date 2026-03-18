@@ -1,0 +1,6 @@
+@dotnet_devops_project_HostAddress = http://localhost:5287
+
+GET {{dotnet_devops_project_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
