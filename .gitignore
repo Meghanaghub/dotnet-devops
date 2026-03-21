@@ -3,6 +3,15 @@
 ##
 ## Get latest from `dotnet new gitignore`
 
+# Terraform
+*.tfstate
+*.tfstate.*
+.terraform/
+.terraform.lock.hcl
+
+# VS Code
+.vscode/
+
 # dotenv files
 .env
 

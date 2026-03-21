@@ -1,0 +1,16 @@
+bin/
+obj/
+*.user
+*.swp
+*.tmp
+*.log
+
+.git/
+.github/
+.vscode/
+.idea/
+.vs/
+
+*.md
+Dockerfile
+docker-compose.yml
