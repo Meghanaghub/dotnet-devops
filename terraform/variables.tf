@@ -38,3 +38,20 @@ variable "app_subnet_name" {
 variable "app_subnet_prefix" {
   type = string
 }
+
+variable "aks_name" {
+  type = string
+}
+
+variable "aks_dns_prefix" {
+  type = string
+}
+
+variable "aks_node_count" {
+  type = number
+}
+
+variable "aks_vm_size" {
+  type    = string
+  default = "Standard_DS2_v2"
+}
