@@ -1,3 +1,5 @@
+![Cover-Banner](screenshots/cover-banner.png)
+
 # 🌟 **Cloud‑Native .NET + Azure DevOps Project**
 
 ### *AKS | ACR | Docker | Terraform | Helm | GitHub Actions | Observability | Secrets*
