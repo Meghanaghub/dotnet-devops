@@ -10,23 +10,8 @@ It is designed to reflect **real-world DevOps, Azure, and Kubernetes workflows**
 
 # 🏗️ **High‑Level Architecture**
 
-    Developer → GitHub Repo → CI Pipeline (Build/Test)
-                 |
-                 v
-             Docker Build → ACR (Image Repository)
-                 |
-                 v
-            Helm Deployment (Manual CD)
-                 |
-                 v
-          Azure Kubernetes Service (AKS)
-       - Deployments, Pods, LoadBalancer Service
-       - Kubernetes Secrets (Secure App Insights Key)
-                 |
-                 v
-    Observability Layer:
-     Application Insights + Log Analytics + AKS Insights
-
+![Architecture](screenshots/architecture.jpg)
+    
 ***
 
 # 🚀 **Tech Stack**
@@ -184,57 +169,58 @@ Real production-grade monitoring.
 
 ### **1. AKS Running Pods**
 
-    kubectl get pods -n dotnet-app
-
-screenshots/aks-pods.png
+![AKS Pods](screenshots/aks-pods.jpg)
 
 ***
 
 ### **2. ACR Repository**
 
-screenshots/acr-repo.png
+![ACR Repository](screenshots/acr-repo.jpg)
 
 ***
 
 ### **3. Helm Release**
 
-screenshots/helm-release.png
+![Helm Release](screenshots/helm-release.jpg)
 
 ***
 
 ### **4. LoadBalancer External IP**
 
-screenshots/loadbalancer.png
+![LoadBalancer](screenshots/loadbalancer.jpg)
+![API respone in Web](screenshots/webpage-api-response.jpg)
 
 ***
 
 ### **5. Application Insights – Live Metrics**
 
-screenshots/appinsights.png
+![App Insights](screenshots/appinsights-livemetrics.jpg)
 
 ***
 
 ### **6. Log Analytics – Kusto Query Logs**
 
-screenshots/kusto-logs.png
+![Kusto Logs](screenshots/kusto-logs.jpg)
 
 ***
 
 ### **7. Terraform Apply**
 
-screenshots/terraform-apply.png
+![Terraform Apply](screenshots/terraform-apply.jpg)
+![Terraform Apply Response](screenshots/terraform-apply-response.jpg)
 
 ***
 
 ### **8. Docker Image Build**
 
-screenshots/docker-build.png
+![Docker Build](screenshots/docker-build.jpg)
 
 ***
 
 ### **9. Namespace + Secrets (non-sensitive)**
 
-screenshots/namespace-secrets.png
+![Namespace](screenshots/namespace.jpg)
+![Secrets](screenshots/secrets.jpg)
 
 ***
 
@@ -292,7 +278,7 @@ It reflects what **actual DevOps engineers** do in top tech/product companies.
 
 # 🙌 **Author**
 
-**MB – DevOps Engineer**  
+**Meghana Bandi – Software Engineer**  
 Azure | AKS | .NET | Kubernetes | Terraform | Helm | Cloud-Native
 
 If you found this project useful, feel free to ⭐ star the repo.
