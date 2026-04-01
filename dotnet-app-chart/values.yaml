@@ -2,7 +2,7 @@ replicaCount: 1
 
 image:
   repository: mbdevopsacr01.azurecr.io/dotnet-devops-project
-  tag: "v1"
+  tag: "v4"
 
 service:
   type: LoadBalancer
@@ -38,3 +38,11 @@ autoscaling:
   maxReplicas: 5
   targetCPUUtilizationPercentage: 80
   targetMemoryUtilizationPercentage: null
+
+env:
+  - name: APPLICATIONINSIGHTS_CONNECTION_STRING
+    valueFrom:
+      secretKeyRef:
+        name: appinsights-secret
+        key: connstr
+

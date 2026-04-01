@@ -19,5 +19,8 @@ spec:
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
           ports:
             - containerPort: {{ .Values.containerPort }}
+          env:
+            {{- toYaml .Values.env | nindent 12 }}
       imagePullSecrets:
         - name: acr-auth
+                 
